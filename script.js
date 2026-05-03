@@ -1,0 +1,4 @@
+
+    function funcionando(){
+        alert("PGS");
+    }

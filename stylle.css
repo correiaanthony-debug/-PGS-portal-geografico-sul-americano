@@ -1,0 +1,22 @@
+
+h1 {
+color: rgb(214, 16, 16);
+
+}
+header {
+    background-color: rgb(187, 223, 255); padding: 13px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    position:sticky;
+top: 0;
+}
+span {color: blue;}
+
+body {
+    min-height: 200vh;
+}
+ul {
+    
+    display: flex;
+    gap: 30px;
+}
+
