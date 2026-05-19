@@ -5,10 +5,10 @@
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PGS — Notícia 1</title>
 </head>
 <body>
-    
+
     <header>
         <div class="logo-titulo">
             <img src="favicon (1).ico" alt="Logo PGS" class="logo">
@@ -17,19 +17,112 @@
                 <p>PGS — INFORMAÇÃO E TERRITÓRIO</p>
             </div>
         </div>
-        
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="cadastar.html">Cadastrar</a>
+            <a href="index.html#noticias">Notícias</a>
+        </nav>
     </header>
+
     <div class="colunas">
-    <div class="coluna-video">
-        <iframe width="100%" height="300" src="https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" frameborder="0" allowfullscreen></iframe>
+
+        <div class="coluna-video">
+            <h2>titulo de video foda</h2>
+            <video src="googlevideo.mp4" controls></video>
+
+            <div class="area-comentarios">
+                <h3>Comentários</h3>
+
+                <div class="input-comentario">
+                    <img src="images.jpeg" alt="avatar" class="avatar">
+                    <div class="campo">
+                        <textarea id="comentario" placeholder="Adicione um comentário"></textarea>
+                        <div class="botoes">
+                            <button class="cancelar">Cancelar</button>
+                            <button class="enviar" onclick="comentar()">Comentar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comentario-falso">
+                    <img src="download.jpeg" alt="avatar" class="avatar">
+                    <div>
+                        <strong>@jaoAFK ✅</strong>
+                        <p>reportagem top, mas queria uma sobre florestas a noite</p>
+                    </div>
+                </div>
+
+                <div class="comentario-falso">
+                    <img src="au.jpeg" alt="avatar" class="avatar">
+                    <div>
+                        <strong>@authenticgames ✅</strong>
+                        <p>seloko essa tal de PEAB ta de parabens</p>
+                    </div>
+                </div>
+
+                <div class="comentario-falso">
+                    <img src="channels4_profile.jpg" alt="avatar" class="avatar">
+                    <div>
+                        <strong>@PirateCoveAAF ✅</strong>
+                        <p>caramba fazia tempo que não via algo sem aquele maldito balão</p>
+                    </div>
+                </div>
+
+                <div class="comentario-falso">
+                    <img src="images (1).jpeg" alt="avatar" class="avatar">
+                    <div>
+                        <strong>@EuHipe ✅</strong>
+                        <p>esse tal de levy correia, tenho é medo do que ele vai fazer no futuro</p>
+                    </div>
+                </div>
+
+                <div class="comentario-falso">
+                    <img src="andrezitos-qclghj9b0glerm647h6q9wod0qstjhl2vkdbhwly1s.jpg" alt="avatar" class="avatar">
+                    <div>
+                        <strong>@Andrezitos ✅</strong>
+                        <p>olha... eu meto a porrada nos tratores mas, saio levemente ferido</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="coluna-texto">
+            <h2 class="manchete">Novo projeto promete revolucionar o agronegócio brasileiro</h2>
+            <p class="lide">A empresa PEAB apresenta tecnologia inovadora em adubos e proteção de lavouras com potencial de impacto mundial.</p>
+            <hr class="linha-azul">
+            <p class="corpo">Estamos aqui para acompanhar um marco que pode representar um grande avanço no setor do agronegócio. Um novo projeto promete trazer uma tecnologia inovadora para a produção agrícola, abrindo caminho para uma evolução não apenas no Brasil, mas com potencial impacto em todo o mundo.</p>
+            <br>
+            <p class="corpo">Levy Correia, criador do projeto, explica: "Eu e minha equipe trabalhamos durante muitos anos no desenvolvimento deste projeto, focado na criação de um novo tipo de adubo e sistema de proteção para plantas e lavouras inteiras. Foi um processo longo, que exigiu pesquisa, testes e muito esforço coletivo."</p>
+            <br>
+            <p class="corpo">"Hoje, com muito orgulho, venho representar a nossa empresa, a PEAB, e apresentar esse projeto que busca contribuir para a evolução do agronegócio brasileiro, trazendo mais eficiência, sustentabilidade e inovação para o campo."</p>
+        </div>
+
+        <div class="coluna-lateral">
+
+    <a href="noticia2.html" class="video-lateral">
+    <img src="tPvxv.jpg" alt="capa vídeo 2" class="thumb">
+    <div class="video-info">
+        <p class="video-titulo">Título do vídeo 2</p>
+        <p class="video-data">1 de janeiro de 2026</p>
     </div>
-    <div class="coluna-texto">
-        
+</a>
+
+    <div class="video-lateral bloqueado">
+        <img src="tPvxv.jpg" alt="capa vídeo 3" class="thumb">
+        <div class="video-info">
+            <p class="video-titulo">🔒 Vídeo bloqueado</p>
+            <p class="video-data">1 de janeiro de 2026</p>
+        </div>
     </div>
-    <div class="coluna-lateral">
-        
-    </div>
+
 </div>
-    
+
+</div>
+
+    </div>
+
+    <script src="noticia1.js"></script>
 </body>
 </html>
