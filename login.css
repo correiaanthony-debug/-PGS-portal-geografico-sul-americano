@@ -18,4 +18,12 @@ body {
     background-size: contain;
     background-position: -100px center;
 }
-span {color: rgb(0, 200, 255);}
+div.titulo { 
+margin-top: 22px;}
+
+span a {
+    text-decoration: none;
+    color: rgb(255, 111, 0);}
+    span {
+    
+    color: rgb(12, 179, 225);}

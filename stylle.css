@@ -10,6 +10,8 @@ body {
     color: #1a1a1a;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -50,18 +52,17 @@ nav.menu a {
 
 .hero h2 {
     font-size: 1.8rem;
-    color: #1a1a1a;
 }
 
 .hero-2 {
-    color: #666;
-    margin-top: 6px;
+    color: #0095ff;
+    margin-top: 8px;
     font-size: 0.95rem;
 }
 
 hr.linha-azul {
     border: none;
-    border-top: 2px solid #0080ff;
+    border-top: 2px solid #ff9900;
     margin-top: 16px;
 }
 
@@ -75,7 +76,7 @@ hr.linha-azul {
 a.card {
     display: block;
     text-decoration: none;
-    color: #1a1a1a;
+    color: #0da7db;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -101,7 +102,7 @@ a.card {
 }
 
 .tag {
-    background-color: #1a6fc4;
+    background-color: #ff7b00;
     color: white;
     font-size: 0.72rem;
     padding: 3px 10px;
@@ -110,15 +111,15 @@ a.card {
 
 .data {
     font-size: 0.8rem;
-    color: #999;
+    color: #158ccc;
 }
 
 footer {
     background-color: #ffffff;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #efefef;
     padding: 24px 40px;
     text-align: center;
-    color: #757575;
+    color: #858585;
     font-size: 0.85rem;
     margin-top: 40px;
 }
