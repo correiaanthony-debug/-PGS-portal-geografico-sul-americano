@@ -8,6 +8,12 @@
     <title>PGS — Notícia 1</title>
 </head>
 <body>
+    <script>
+    if (!sessionStorage.getItem("pgs_sessao")) {
+        alert("Você precisa estar logado para ler esta notícia!");
+        window.location.href = "login.html";
+    }
+    </script>
 
     <header>
         <div class="logo-titulo">
@@ -19,9 +25,8 @@
         </div>
         <nav class="menu">
             <a href="index.html">Início</a>
-            <a href="login.html">Login</a>
-            <a href="cadastar.html">Cadastrar</a>
             <a href="index.html#noticias">Notícias</a>
+            <a href="sobre.html">Sobre nós</a>
         </nav>
     </header>
 
