@@ -1,26 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-.login-box {
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background-color: white;
-   padding: 40px;
-   border-radius: 10px;
-   box-shadow: 0px 4px 16px rgba(0,0,0,0.2);
-}
-body {
-    display: flex;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("tela-de-fundo-login.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: -100px center;
 }
-span {color: rgb(21, 136, 203);}
-span a {
-    text-decoration: none;
-    color: rgb(255, 162, 0);
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 14px 40px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    color: rgb(32, 129, 255);
+    background-color: rgba(0, 221, 255, 0.798);
+}
+
+span { color: rgb(0, 70, 191); }
+
+hr {
+    border: none;
+    border-top: 2px solid #ff9900;
+    margin-top: -9px;
+}
+
+.topo span {
+    color: #003f8a;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.login-box h2 {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.login-box input:focus {
+    border-color: #1a6fc4;
+}
+
+.btn-entrar {
+    background-color: #1a6fc4;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: background 0.2s;
+}
+
+.btn-entrar:hover {
+    background-color: #ff8800;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.rodape a {
+    color: #1a6fc4;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.senha-box {
+    position: relative;
+}
+
+.senha-box input {
+    width: 100%;
+    padding-right: 44px;
+}
+
+.olho {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    opacity: 0.5;
 }

@@ -8,31 +8,45 @@
     <title>(PGS) cadastro</title>
 </head>
 <body>
-    
+
+<header>
+        <div class="logo-titulo">
+            <section class="cards" id="Inicio"></section>
+            <img src="favicon (1).ico" alt="Logo PGS" class="logo">
+            <div>
+                <h1>portal geografico <span>sul-americano</span></h1>
+                <p>PGS — INFORMAÇÃO E TERRITÓRIO</p>
+            </div>
+        </div>
+    </header>
+
 <div class="login-box">
-    <h2>Faça sua contra <span>(PGS)</span></h2>
-    <p>nos ajude com sua participação nas nossas noticias</p>
-    <div class="lados">
-<input type="nome" id="nome" placeholder="nome">
-<input type="sobre nome" id="sobre nome" placeholder="sobre nome (opicional)">
-    </div>
-    
-       
-       <input type="email" id="email" placeholder="Email">
-       <input type="emailc" id="emailc" placeholder="confirmar email">
-       <input type="numero" id="numero" placeholder="numero">
-       <input type="password" id="senha" placeholder="Senha">
-       <input type="password" id="senhac" placeholder="confirmar Senha">
-       
-    <button onclick="entrar()">Entrar</button>
-    <span>
-    <p>ja tem uma conta PGS? basta clickar em <br><a href="login.html">login</a><br> mas se quiaer voltar click em <a href="index.html">Menu</a>
-    </p>
-    </span>
-    
+    <h2>Olá, nós ajude a com suas interaçoes com sua <span>conta!</span></h2>
+    <hr>
+
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="text" id="sobrenome" placeholder="Sobrenome (opcional)">
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="email" id="emailc" placeholder="Confirmar e-mail">
+    <input type="tel" id="numero" placeholder="Número de telefone">
+
+    <div class="senha-box">
+    <input type="password" id="senha" placeholder="Senha">
+    <img src="olho.png" id="olho-senha" onclick="verSenha('senha', 'olho-senha')" class="olho">
+</div>
+<div class="senha-box">
+    <input type="password" id="senhac" placeholder="Confirmar senha">
+    <img src="olho.png" id="olho-senhac" onclick="verSenha('senhac', 'olho-senhac')" class="olho">
+</div>
+
+    <button class="btn-entrar" onclick="entrar()">CADASTRAR</button>
+
+    <hr>
+
+    <p class="rodape">Já tem uma conta? <a href="login.html">Entrar</a></p>
+    <p class="rodape">Quer voltar? <a href="index.html">Menu</a></p>
 </div>
 
 <script src="cadastar.js"></script>
-
 </body>
 </html>

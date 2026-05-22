@@ -17,12 +17,34 @@ function entrar() {
         alert("Preencha: " + faltando.join(", "));
         return;
     }
-
+    
+    if (email && !email.includes("@")) {
+    alert("Digite um e-mail válido");
+    return;
+}
     if (email !== emailc) {
         alert("o email tem algo de errado");
     } else if (senha !== senhac) {
         alert("a senha tem algo de errado");
     } else {
+        localStorage.setItem("usuarioEmail", email);
+        localStorage.setItem("usuarioSenha", senha);
+        localStorage.setItem("usuarioNome", nome);
         alert("Cadastro realizado!");
+        window.location.href = "login.html";
     }
 }
+
+function verSenha(inputId, olhoId) {
+    let input = document.getElementById(inputId);
+    let olho = document.getElementById(olhoId);
+
+    if (input.type === "password") {
+        input.type = "text";
+        olho.src = "visivel.png";
+    } else {
+        input.type = "password";
+        olho.src = "olho.png";
+    }
+}
+
