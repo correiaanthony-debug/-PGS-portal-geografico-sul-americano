@@ -6,21 +6,22 @@
 
 body {
     font-family: sans-serif;
-    background-color: #f9f9f9;
-    color: #1a1a1a;
-    overflow-x: hidden;
+    background-color: #e3f6ff;
+    color: #ffffff;
 }
+
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #2957ff;
     padding: 14px 40px;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
 }
 
 .logo-titulo {
@@ -30,21 +31,18 @@ header {
 }
 
 h1 {
-    color: rgb(32, 129, 255);
-    background-color: rgba(0, 221, 255, 0.798);
+    color: rgb(255, 255, 255);
 }
 
-span { color: rgb(0, 70, 191); }
-
-nav.menu {
-    display: flex;
-    gap: 28px;
+h3 {
+    color: rgb(0, 0, 0);
 }
 
-nav.menu a {
-    text-decoration: none;
-    color: #1a6fc4;
+.comentario-falso {
+    color: #000000;
 }
+
+span { color: rgb(255, 166, 0); }
 
 .colunas {
     display: flex;
@@ -61,11 +59,14 @@ nav.menu a {
 .coluna-texto {
     flex: 0 0 35%;
     max-width: 35%;
+    padding: 0px 60px;
 }
 
 .coluna-lateral {
     flex: 0 0 25%;
     max-width: 25%;
+    position: relative;
+    z-index: 0;
 }
 
 .coluna-video video {
@@ -141,7 +142,7 @@ nav.menu a {
 
 .enviar {
     background-color: #1a6fc4;
-    color: white;
+    color: #fffddf;
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
@@ -210,9 +211,139 @@ nav.menu a {
 .bloqueado {
     opacity: 0.4;
     pointer-events: none;
+    
 }
 
 a.video-lateral {
     text-decoration: none;
     color: inherit;
+}
+
+
+.barra-botoes {
+    display: flex;
+    gap: 12px;
+    padding: 10px 24px;
+    flex-wrap: wrap;
+}
+
+.btn-menu {
+    text-decoration: none;
+    color: white;
+    background-color: #2957ff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: background 0.2s;
+}
+
+.btn-menu:hover {
+    background-color: #ff9900;
+    color: #1a1a1a;
+}
+
+.sem-hover:hover {
+    background-color: #2957ff !important;
+    color: rgb(255, 174, 0) !important;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    nav.barra-botoes {
+        gap: 16px;
+        font-size: 0.9rem;
+    }
+
+    .colunas {
+        padding: 16px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .barra-botoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        max-width: 50%;
+        padding: 0;
+        gap: 8px;
+    }
+
+    .btn-menu {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+    }
+    header {
+        padding: 10px 16px;
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .logo-titulo p {
+        display: none;
+    }
+
+    .colunas {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .coluna-video {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .coluna-lateral {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 2;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        
+    }
+
+    .coluna-lateral .thumb {
+        width: 100%;
+        height: 160px;
+    }
+
+    .coluna-lateral .video-lateral {
+        flex-direction: column;
+    }
+
+    .coluna-texto {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 3;
+    }
+
+    .area-comentarios {
+        order: 4;
+    }
+}
+
+
+.divisor-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .divisor-mobile {
+        display: block;
+        border: none;
+        border-top: 2px solid #ff9500;
+        width: 100%;
+    }
 }

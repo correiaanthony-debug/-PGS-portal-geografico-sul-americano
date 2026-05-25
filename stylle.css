@@ -6,8 +6,8 @@
 
 body {
     font-family: sans-serif;
-    background-color: #f9f9f9;
-    color: #1a1a1a;
+    background-color: #e3f6ff;
+    color: #ffffff;
 }
 
 
@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #2957ff;
     padding: 14px 40px;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     position: sticky;
@@ -30,11 +30,10 @@ header {
 }
 
 h1 {
-    color: rgb(32, 129, 255);
-    background-color: rgba(0, 221, 255, 0.798);
+    color: #ffffff;
 }
 
-span { color: rgb(0, 70, 191); }
+span { color: rgb(255, 170, 0); }
 
 nav.menu {
     display: flex;
@@ -42,10 +41,12 @@ nav.menu {
 }
 
 nav.menu a {
+    
     text-decoration: none;
-    color: #1a6fc4;
+    color: #ffb700;
     display: flex;
     align-items: center;
+    
 }
 
 
@@ -58,7 +59,7 @@ nav.menu a {
 }
 
 .hero-2 {
-    color: #0095ff;
+    color: #606060;
     margin-top: 8px;
     font-size: 0.95rem;
 }
@@ -80,10 +81,10 @@ hr.linha-azul {
 a.card {
     display: block;
     text-decoration: none;
-    color: #0da7db;
-    background: #ffffff;
+    color: #002169;
+    background: #e6faff;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 12px rgba(60, 190, 255, 0.38);
     overflow: hidden;
     width: 400px;
 }
@@ -107,7 +108,7 @@ a.card {
 
 .tag {
     background-color: #ff7b00;
-    color: white;
+    color: #fffddf;
     font-size: 0.72rem;
     padding: 3px 10px;
     border-radius: 20px;
@@ -115,12 +116,12 @@ a.card {
 
 .data {
     font-size: 0.8rem;
-    color: #158ccc;
+    color: #ff7300;
 }
 
 footer {
-    background-color: #ffffff;
-    border-top: 1px solid #efefef;
+    background-color: #e3f6ff;
+    border-top: 1px solid #ccdde5;
     padding: 24px 40px;
     text-align: center;
     color: #858585;
@@ -139,4 +140,85 @@ nav.footer-menu a {
     text-decoration: none;
     color: #1a6fc4;
     font-size: 0.88rem;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 16px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .logo-titulo p {
+        font-size: 0.7rem;
+    }
+
+    nav.menu {
+        gap: 12px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 20px 16px 10px;
+    }
+
+    .cards {
+        padding: 16px;
+        justify-content: center;
+    }
+
+    a.card {
+        width: 100%;
+    }
+
+    nav.footer-menu {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 1024px)
+ {
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    nav.menu {
+        gap: 16px;
+        font-size: 0.9rem;
+    }
+}
+
+.barra-botoes {
+    display: flex;
+    gap: 12px;
+    padding: 10px 24px;
+    flex-wrap: wrap;
+}
+
+.btn-menu {
+    text-decoration: none;
+    color: white;
+    background-color: #2957ff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: background 0.2s;
+}
+
+.btn-menu:hover {
+    background-color: #ff9900;
+    color: #1a1a1a;
+}
+
+.sem-hover:hover {
+    background-color: #2957ff !important;
+    color: rgb(255, 174, 0) !important;
 }
