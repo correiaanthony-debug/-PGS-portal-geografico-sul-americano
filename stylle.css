@@ -142,6 +142,35 @@ nav.footer-menu a {
     font-size: 0.88rem;
 }
 
+.barra-botoes {
+    display: flex;
+    gap: 12px;
+    padding: 10px 24px;
+    flex-wrap: wrap;
+}
+
+.btn-menu {
+    text-decoration: none;
+    color: white;
+    background-color: #2957ff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: background 0.2s;
+}
+
+.btn-menu:hover {
+    background-color: #ff9900;
+    color: #1a1a1a;
+}
+
+.sem-hover:hover {
+    background-color: #2957ff !important;
+    color: rgb(255, 174, 0) !important;
+}
+
 @media (max-width: 768px) {
 
     header {
@@ -194,31 +223,3 @@ nav.footer-menu a {
     }
 }
 
-.barra-botoes {
-    display: flex;
-    gap: 12px;
-    padding: 10px 24px;
-    flex-wrap: wrap;
-}
-
-.btn-menu {
-    text-decoration: none;
-    color: white;
-    background-color: #2957ff;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border: 1px solid rgba(255,255,255,0.2);
-    transition: background 0.2s;
-}
-
-.btn-menu:hover {
-    background-color: #ff9900;
-    color: #1a1a1a;
-}
-
-.sem-hover:hover {
-    background-color: #2957ff !important;
-    color: rgb(255, 174, 0) !important;
-}
