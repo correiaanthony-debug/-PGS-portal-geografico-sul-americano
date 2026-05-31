@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2957ff;
+    background: linear-gradient(to right, #0a1f8f, #2957ff);
     padding: 14px 40px;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     position: sticky;
@@ -120,11 +120,11 @@ a.card {
 }
 
 footer {
-    background-color: #e3f6ff;
-    border-top: 1px solid #ccdde5;
+    background: linear-gradient(to right, #0a1f8f, #2957ff);
+    border-top: 1px solid #8cdbff;
     padding: 24px 40px;
     text-align: center;
-    color: #858585;
+    color: #ffffff;
     font-size: 0.85rem;
     margin-top: 40px;
 }
@@ -138,7 +138,7 @@ nav.footer-menu {
 
 nav.footer-menu a {
     text-decoration: none;
-    color: #1a6fc4;
+    color: #fea900;
     font-size: 0.88rem;
 }
 
@@ -169,6 +169,71 @@ nav.footer-menu a {
 .sem-hover:hover {
     background-color: #2957ff !important;
     color: rgb(255, 174, 0) !important;
+}
+
+.card-certificado {
+    position: relative;
+    cursor: not-allowed;
+    background: #e6faff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(60, 190, 255, 0.38);
+    overflow: hidden;
+    width: 400px;
+}
+
+.card-certificado.desbloqueado {
+    cursor: pointer;
+}
+
+.card-lock-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 30, 30, 0.72);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.certificadoTX {
+    color: #1a1a1a;
+}
+
+.card-certificado.desbloqueado .card-lock-overlay {
+    display: none;
+}
+
+.lock-icon {
+    font-size: 2.5rem;
+}
+
+.lock-msg {
+    color: #ffffff;
+}
+
+.footer-contato {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.footer-contato a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-contato a:hover {
+    text-decoration: underline;
+}
+
+.footer-icone {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 @media (max-width: 768px) {

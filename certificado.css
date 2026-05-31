@@ -1,0 +1,290 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #e3f6ff;
+    color: #1a1a1a;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #0a1f8f, #2957ff);
+    padding: 14px 40px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo { width: 36px; height: 36px; }
+
+header h1 { color: #fff; font-size: 1.1rem; font-family: 'Lato', sans-serif; font-weight: 700; }
+header span { color: rgb(255,170,0); }
+.logo-titulo p { font-size: 0.72rem; color: rgba(255,255,255,0.7); }
+
+.barra-botoes { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn-menu {
+    text-decoration: none;
+    color: white;
+    background-color: #2957ff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: background 0.2s;
+}
+.btn-menu:hover { background-color: #ff9900; color: #1a1a1a; }
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px 64px;
+    gap: 32px;
+}
+
+.pagina h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #0a1f8f;
+    text-align: center;
+}
+
+.certificado {
+    width: 100%;
+    max-width: 860px;
+    background: #fffdf5;
+    border: 3px solid #c8a84b;
+    border-radius: 4px;
+    padding: 56px 64px;
+    position: relative;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+    animation: fadeIn 0.8s ease both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.certificado::before,
+.certificado::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-color: #c8a84b;
+    border-style: solid;
+}
+.certificado::before {
+    top: 10px; left: 10px;
+    border-width: 3px 0 0 3px;
+}
+.certificado::after {
+    bottom: 10px; right: 10px;
+    border-width: 0 3px 3px 0;
+}
+
+.borda-interna {
+    border: 1px solid #e0c97a;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+}
+
+.brasao {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #0a1f8f, #2957ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 16px rgba(41,87,255,0.3);
+    border: 3px solid #c8a84b;
+}
+
+.emissor {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.titulo-cert {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #c8a84b;
+    font-weight: 400;
+}
+
+.nome-cert {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: #0a1f8f;
+    font-weight: 700;
+    line-height: 1.2;
+    min-height: 3.5rem;
+}
+
+.descricao {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.8;
+    max-width: 540px;
+}
+
+.descricao-pequena {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.linha-dourada {
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #c8a84b, transparent);
+}
+
+.curso-nome {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #1a3a00;
+    font-style: italic;
+}
+
+.rodape-cert {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 16px;
+    gap: 24px;
+}
+
+.assinatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+}
+
+.linha-assinatura {
+    width: 160px;
+    height: 1px;
+    background: #888;
+}
+
+.assinatura-nome {
+    font-size: 0.78rem;
+    color: #555;
+    text-align: center;
+}
+
+.assinatura-cargo {
+    font-size: 0.7rem;
+    color: #999;
+    text-align: center;
+}
+
+.data-cert {
+    font-size: 0.78rem;
+    color: #888;
+    text-align: center;
+}
+
+.selo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.selo-circulo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px double #c8a84b;
+    background: radial-gradient(circle, #fffbee, #f5e9c0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8a6a00;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.acoes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-imprimir, .btn-voltar {
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-imprimir {
+    background: linear-gradient(to right, #0a1f8f, #2957ff);
+    color: white;
+    box-shadow: 0 4px 14px rgba(41,87,255,0.35);
+}
+.btn-imprimir:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(41,87,255,0.45); }
+
+.btn-voltar {
+    background: white;
+    color: #0a1f8f;
+    border: 2px solid #2957ff;
+}
+.btn-voltar:hover { background: #e3f6ff; }
+
+@media print {
+    body { background: white; }
+    header, .acoes, .pagina > h2 { display: none !important; }
+    .pagina { padding: 0; }
+    .certificado {
+        box-shadow: none;
+        max-width: 100%;
+        border: 3px solid #c8a84b;
+    }
+}
+
+@media (max-width: 768px) {
+    header { padding: 10px 16px; }
+    header h1 { font-size: 0.85rem; }
+    .logo-titulo p { display: none; }
+    .certificado { padding: 28px 16px; }
+    .borda-interna { padding: 20px 12px; }
+    .nome-cert { font-size: 1.8rem; }
+    .rodape-cert { flex-direction: column; align-items: center; gap: 20px; }
+}

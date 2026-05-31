@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGS — agrotoxicos</title>
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="noticiasbase1.css">
+</head>
+<body>
+    <script>
+        if (!sessionStorage.getItem("pgs_sessao")) {
+            alert("Você precisa estar logado para ler esta notícia!");
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <header>
+        <div class="logo-titulo">
+            <img src="favicon (1).ico" alt="Logo PGS" class="logo">
+            <div>
+                <h1>portal geografico <span>sul-americano</span></h1>
+                <p>PGS — INFORMAÇÃO E TERRITÓRIO</p>
+            </div>
+        </div>
+        <nav class="barra-botoes">
+            <a href="index.html" class="btn-menu">Início</a>
+            <a href="index.html#noticias" class="btn-menu">Notícias</a>
+            <a href="sobre.html" class="btn-menu">Sobre nós</a>
+            <a href="cadastar.html" class="btn-menu">Cadastrar</a>
+            <a href="login.html" class="btn-menu">Login</a>
+        </nav>
+    </header>
+
+    <section class="noticia-banner">
+        <div class="banner-overlay">
+            <span class="banner-tag">Agronegócio</span>
+            <h2>Agroquímicos em Debate: Os Desafios dos Agrotóxicos e o Caminho para uma Produção Mais Sustentável</h2>
+            <p class="banner-sub">Especialistas defendem o uso de alternativas ecológicas para reduzir impactos ambientais e promover uma agricultura mais saudável.</p>
+            <span class="banner-data">30 de maio de 2023</span>
+        </div>
+    </section>
+
+    <div class="conteudo">
+
+        <article class="artigo">
+
+            <p class="artigo-lead">O uso de agrotóxicos continua sendo um dos temas mais discutidos no agronegócio. Embora esses produtos auxiliem no controle de pragas e no aumento da produtividade, seu uso excessivo pode causar impactos ao meio ambiente, à biodiversidade e à saúde humana.</p>
+
+            <div class="bloco-com-imagem">
+                <div class="bloco-texto">
+                    <h3>O PROBLEMA</h3>
+                    <p>Os agrotóxicos são amplamente utilizados para proteger plantações contra insetos, fungos e ervas daninhas. No entanto, quando aplicados de forma inadequada ou em excesso, podem contaminar o solo, os rios e os lençóis freáticos, além de afetar organismos importantes para o equilíbrio dos ecossistemas, como abelhas e outros polinizadores..</p>
+                    <p>Pesquisadores também alertam que a exposição frequente a determinadas substâncias pode representar riscos à saúde de trabalhadores rurais e comunidades próximas às áreas de cultivo.</p>
+                </div>
+                <div class="bloco-imagem">
+                    <img src="cleverton-brum-g--S0fjBTog-unsplash.jpg" alt="Campo agrícola moderno">
+                </div>
+            </div>
+
+            <h3>AS ALTERNATIVAS</h3>
+            <p>Para reduzir esses impactos, produtores rurais têm investido em métodos mais sustentáveis de controle de pragas. Entre as principais alternativas estão o controle biológico, que utiliza inimigos naturais dos insetos, a rotação de culturas, o manejo integrado de pragas e o uso de bioinsumos produzidos a partir de organismos naturais.</p>
+            <p>Essas práticas ajudam a diminuir a dependência de produtos químicos, preservam os recursos naturais e contribuem para uma produção agrícola mais equilibrada.</p>
+
+            <div class="bloco-com-imagem reverso">
+                <div class="bloco-imagem">
+                    <img src="lumin-osity-6DMht7wYt6g-unsplash.jpg" alt="erro">
+                </div>
+                <div class="bloco-texto">
+                    <h3>CONCLUSÃO</h3>
+                    <p>Especialistas afirmam que o futuro do agronegócio depende da combinação entre produtividade e sustentabilidade. O uso consciente de defensivos agrícolas, aliado a tecnologias ecológicas, pode garantir a produção de alimentos em larga escala sem comprometer a saúde das pessoas e do meio ambiente.</p>
+                </div>
+            </div>
+
+            <div class="destaque-box">
+                <p>"O futuro da agricultura não depende apenas de produzir mais, mas de produzir melhor. As alternativas biológicas mostram que é possível proteger as lavouras e o meio ambiente ao mesmo tempo."</p>
+                <span>— Especialista em Agricultura Sustentável, 2023</span>
+            </div>
+
+            <h3>América do Sul como Referência Mundial</h3>
+            <p>A crescente adoção de bioinsumos, controle biológico e práticas sustentáveis tem colocado a América do Sul em destaque no cenário agrícola internacional. A região demonstra que é possível reduzir a dependência de agrotóxicos, aumentar a produtividade e preservar os recursos naturais, tornando-se uma referência mundial em agricultura sustentável..</p>
+
+        </article>
+
+        <aside class="sidebar">
+            <div class="sidebar-pontos">
+                <p class="pts-label">Seus pontos</p>
+                <p class="pts-valor" id="pts-valor">0</p>
+                <p class="pts-sub">leia notícias para ganhar pontos</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="noticiasbase1.js"></script>
+</body>
+</html>

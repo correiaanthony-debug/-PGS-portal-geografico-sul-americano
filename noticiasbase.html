@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGS — Agro e Sustentabilidade</title>
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="noticiasbase.css">
+</head>
+<body>
+    <script>
+        if (!sessionStorage.getItem("pgs_sessao")) {
+            alert("Você precisa estar logado para ler esta notícia!");
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <header>
+        <div class="logo-titulo">
+            <img src="favicon (1).ico" alt="Logo PGS" class="logo">
+            <div>
+                <h1>portal geografico <span>sul-americano</span></h1>
+                <p>PGS — INFORMAÇÃO E TERRITÓRIO</p>
+            </div>
+        </div>
+        <nav class="barra-botoes">
+            <a href="index.html" class="btn-menu">Início</a>
+            <a href="index.html#noticias" class="btn-menu">Notícias</a>
+            <a href="sobre.html" class="btn-menu">Sobre nós</a>
+            <a href="cadastar.html" class="btn-menu">Cadastrar</a>
+            <a href="login.html" class="btn-menu">Login</a>
+        </nav>
+    </header>
+
+    <section class="noticia-banner">
+        <div class="banner-overlay">
+            <span class="banner-tag">Agronegócio</span>
+            <h2>O Campo que Alimenta o Futuro</h2>
+            <p class="banner-sub">Como o agronegócio sul-americano está se reinventando para atender as demandas globais do século XXI</p>
+            <span class="banner-data">10 de janeiro de 2023</span>
+        </div>
+    </section>
+
+    <div class="conteudo">
+
+        <article class="artigo">
+
+            <p class="artigo-lead">O agronegócio da América do Sul vive um momento de profunda transformação. A fusão entre tradição agrícola e tecnologia de ponta está criando um novo modelo de produção — mais eficiente, mais sustentável e cada vez mais conectado ao mercado global.</p>
+
+            <div class="bloco-com-imagem">
+                <div class="bloco-texto">
+                    <h3>Como funciona a nova agricultura?</h3>
+                    <p>A agricultura de precisão chegou para mudar as regras do campo. Com drones que monitoram lavouras em tempo real, sensores de solo que medem umidade e nutrientes, e inteligência artificial que prevê colheitas, o produtor rural hoje toma decisões baseadas em dados.</p>
+                    <p>Essa revolução tecnológica permite que menos insumos sejam utilizados para produzir mais. O resultado é uma redução significativa de custos e impacto ambiental, com aumento expressivo da produtividade por hectare.</p>
+                </div>
+                <div class="bloco-imagem">
+                    <img src="chris-ensminger-yJDZTDeHeG8-unsplash.jpg" alt="erro">
+                    <p class="legenda">uso de agrotoxicos aqui no bracil</p>
+                </div>
+            </div>
+
+            <h3>O Elo com a Sustentabilidade</h3>
+            <p>Produzir muito não é mais suficiente — é preciso produzir melhor. O agronegócio moderno incorporou práticas como o Plantio Direto, que protege o solo e reduz a erosão, a Rotação de Culturas, que mantém a fertilidade natural da terra, e o uso inteligente da água por meio de sistemas de irrigação eficientes.</p>
+            <p>Preservar matas ciliares, nascentes e corredores ecológicos deixou de ser apenas obrigação legal e se tornou parte central da estratégia produtiva. Produtores que adotam práticas sustentáveis têm acesso a mercados premium e financiamentos com juros menores.</p>
+
+            <div class="bloco-com-imagem reverso">
+                <div class="bloco-imagem">
+                    <img src="dibakar-roy-lRtzMCnbWSk-unsplash.jpg" alt="erro">
+                    <p class="legenda">uso intrustial de agrotoxicos</p>
+                </div>
+                <div class="bloco-texto">
+                    <h3>O Futuro da Nossa Terra</h3>
+                    <p>O futuro da produção agrícola sul-americana está na união entre o conhecimento tradicional e a inovação digital. Com o uso de drones, sensores e inteligência artificial, estamos entrando na era da Agricultura 5.0.</p>
+                    <p>O impacto é claro: alimentos mais saudáveis, menos impacto ambiental e uma América do Sul cada vez mais forte e resiliente diante dos desafios globais do clima e da segurança alimentar.</p>
+                </div>
+            </div>
+
+            <div class="destaque-box">
+                <p>"A tecnologia não substituiu o agricultor — ela o empoderou. Hoje, com um smartphone e dados precisos, um pequeno produtor pode tomar decisões que antes só grandes empresas conseguiam."</p>
+                <span>— Pesquisador da Embrapa, 2026</span>
+            </div>
+
+            <h3>América do Sul como Referência Mundial</h3>
+            <p>Com vastas extensões de terra fértil, biodiversidade única e crescente adoção de tecnologia, a América do Sul se consolida como uma das principais referências mundiais em produção agrícola responsável. O desafio agora é garantir que esse crescimento chegue a todos — dos grandes produtores aos pequenos agricultores familiares que sustentam comunidades inteiras.</p>
+
+        </article>
+
+        <aside class="sidebar">
+            <div class="sidebar-pontos">
+                <p class="pts-label">Seus pontos</p>
+                <p class="pts-valor" id="pts-valor">0</p>
+                <p class="pts-sub">leia notícias para ganhar pontos</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="noticiobase.js"></script>
+</body>
+</html>

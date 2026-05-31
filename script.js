@@ -24,3 +24,21 @@ if (sessao) {
         };
     }
 }
+
+let pontos = parseInt(localStorage.getItem("pontos") || "0");
+let cardCert = document.getElementById("card-certificado");
+
+if (cardCert) {
+    if (pontos >= 4) {
+        cardCert.classList.add("desbloqueado");
+        cardCert.style.cursor = "pointer";
+        cardCert.onclick = function () {
+            window.location.href = "certificado.html";
+        };
+    } else {
+        let lockMsg = cardCert.querySelector(".lock-msg");
+        if (lockMsg) {
+            lockMsg.textContent = `Leia mais ${4 - pontos} notícia(s) para desbloquear`;
+        }
+    }
+}
