@@ -35,10 +35,5 @@ if (cardCert) {
         cardCert.onclick = function () {
             window.location.href = "certificado.html";
         };
-    } else {
-        let lockMsg = cardCert.querySelector(".lock-msg");
-        if (lockMsg) {
-            lockMsg.textContent = `Leia mais ${4 - pontos} notícia(s) para desbloquear`;
         }
     }
-}

@@ -2,12 +2,12 @@ const sessaoAtual = JSON.parse(sessionStorage.getItem("pgs_sessao") || "null");
 
 if (sessaoAtual) {
     let pontos = parseInt(localStorage.getItem("pontos") || "0");
-    let jaVisitou = localStorage.getItem("visitou_noticia2");
+    let jaVisitou = localStorage.getItem("visitou_noticia22");
 
     if (!jaVisitou) {
         pontos += 1;
         localStorage.setItem("pontos", pontos);
-        localStorage.setItem("visitou_noticia2", "true");
+        localStorage.setItem("visitou_noticia22", "true");
     }
 
     document.getElementById("pts-valor").textContent = pontos;
